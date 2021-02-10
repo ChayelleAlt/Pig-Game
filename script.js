@@ -28,9 +28,6 @@ let score, currentScore, activePlayer, playing;
 
 //Starting Conditions
 
-
-
-
 const init = function () {
 
     playing = true;
@@ -100,7 +97,7 @@ btnHold.addEventListener('click', function () {
         document.getElementById(`score--${activePlayer}`).textContent = score[activePlayer];
         //2. Check score is >=100
         //Finish Game
-        if (score[activePlayer] >= 20) {
+        if (score[activePlayer] >= 100) {
             //Finish game
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
             document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
